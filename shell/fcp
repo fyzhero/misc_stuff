@@ -1,0 +1,11 @@
+#!/bin/sh
+
+src_file=$1
+dst_path=$2
+
+if [ "$src_file" == "" ]; then 
+    echo "this command is particular for scp files to fanyizhong's host"
+    echo "and now you need a src file path."
+else
+    scp -r $src_file $dst_path  
+fi
